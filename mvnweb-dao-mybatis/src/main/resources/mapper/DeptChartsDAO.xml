@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.company.mybatis.dao.DeptChartsDAO">
+	<select id="getData" resultType="map">
+		select d.deptno,d.dname,(select count(*) from emp where deptno=d.deptno) empCount from dept d order by d.deptno
+	</select>
+</mapper>

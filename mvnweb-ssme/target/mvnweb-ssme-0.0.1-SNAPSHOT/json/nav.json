@@ -1,0 +1,13 @@
+[
+    {"id":1,"text":"系統管理", "iconCls":"icon-home"},
+    
+    {"id":2,"text":"admin", "iconCls":"icon-user", "parentId":1,"href":"/users/admin"},
+    
+  	{"id":3,"text":"部门管理", "iconCls":"icon-user", "parentId":1},
+  	{"id":4,"text":"部门列表", "iconCls":"icon-man",  "parentId":3, "href":"/dept/depts/page"},
+  	
+  	{"id":5,"text":"员工管理", "iconCls":"icon-user", "parentId":1},
+  	{"id":6,"text":"员工列表", "iconCls":"icon-man",  "parentId":5, "href":"/emp/emps/page"}
+]
+
+ 

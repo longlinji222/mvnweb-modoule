@@ -1,0 +1,6 @@
+DEBUG -进入divids方法！
+ 0 com.company.mybatis.test.Logtest 2017 十二月 26 16:10:47,456 
+INFO -参数：1,1
+ 5 com.company.mybatis.test.Logtest 2017 十二月 26 16:10:47,461 
+INFO -执行结果:1
+ 6 com.company.mybatis.test.Logtest 2017 十二月 26 16:10:47,462 
