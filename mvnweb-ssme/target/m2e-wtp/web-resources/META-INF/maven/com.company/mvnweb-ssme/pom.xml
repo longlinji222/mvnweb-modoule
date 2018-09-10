@@ -152,6 +152,12 @@
 			<artifactId>mvnweb-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!-- 上传,下载 -->
+		<dependency>
+			<groupId>com.company</groupId>
+			<artifactId>mvnweb-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		
 	</dependencies>
 	<build>

@@ -40,14 +40,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<table cellpadding="10" align="center">
 					<tr>
 						<td style="text-align:right">账号:</td>
-						<td style="width:20px"><input class="easyui-textbox " type="text" name="username"
+						<td style="width:20px"><input class="easyui-textbox " type="text" name="username" value="admin"
 							style="height: 30px; width: 180px;" 
-							data-options="validType:'length[3,10]',required:true,prompt:'请输入账号'"></input></td>
+							data-options="validType:'length[3,10]',required:true,prompt:'请输入账号'"></td>
 					</tr>
 					<tr>
 						<td style="text-align:right">密码:</td>
-						<td id="pwda"><input id="pwd" class="easyui-passwordbox" type="text" name="userpwd"
-							style="height: 30px; width: 180px;" data-options="required:true,prompt:'请输入密码'"></input></td>
+						<td id="pwda"><input id="pwd" class="easyui-passwordbox" type="text" name="userpwd" value="123456"
+							style="height: 30px; width: 180px;" data-options="required:true,prompt:'请输入密码'"></td>
 					</tr>
 					<tr>
 						<td style="text-align:right">验证码:</td>

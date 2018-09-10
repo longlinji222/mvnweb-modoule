@@ -9,7 +9,7 @@
 <div id="dept_tb">
 	<a id="dept_toadd" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">新增</a>
 	<a id="dept_delete" class="easyui-linkbutton"data-options="iconCls:'icon-cancel',plain:true">删除</a>
-	<a id="dept_export" class="easyui-linkbutton"data-options="iconCls:'icon-edit',plain:true">export</a>
+	<a id="dept_export" class="easyui-linkbutton"data-options="iconCls:'icon-edit',plain:true">导出表单</a>
 </div>
 
 <!-- 部门列表 -->
@@ -127,7 +127,7 @@
 								success:function(data){
 									if(data.status==1){
 										$('#dept_datagrid').datagrid("load");
-										$('#dept_adddiv').form('clear');
+										$('#modalForm').form('clear');
 										$('#dept_adddiv').window('close');
 									}else{
 										$.messager.alert('警告','修改失败!'); 
@@ -151,6 +151,8 @@
 $(function(){
 	/* 新增部门js */
 	$('#dept_toadd').on('click',function(){
+		$('#modalForm').form('clear');//清空表单
+		$('#modalForm').form('disableValidation');//关闭验证
 		$('#dept_adddiv').dialog({    
 		    title: '新增部门',
 		    width: 340,    
@@ -164,16 +166,19 @@ $(function(){
 				text:'保存',
 				handler:function(){
 					var url="dept/depts";
-					$.post(url,$("#modalForm").serialize(),function(data){
-						if(data.status==1){
-							$('#dept_datagrid').datagrid("load");
-							$('#dept_adddiv').form('clear');
-							$('#dept_adddiv').window('close');
-						}else{
-							$.messager.alert('警告','添加失败!'); 
-						}
-						
-					})
+					if($('#modalForm').form('enableValidation').form('validate')){
+						$.post(url,$("#modalForm").serialize(),function(data){
+							if(data.status==1){
+								$('#dept_datagrid').datagrid("load");
+								$('#modalForm').form('clear');
+								$('#dept_adddiv').window('close');
+							}else{
+								$.messager.alert('警告','添加失败!'); 
+							}
+						})
+					}else{
+						console.info('验证未通过');	
+					}
 				}
 			},{
 				text:'关闭',
@@ -210,17 +215,6 @@ $(function(){
 	/* export */
 	$('#dept_export').on('click',function(){
 		window.open("/dept/download")
-		/* $.post("/dept/download",{},function(data){
-			if(data.status==1){
-				$.messager.alert('提示','导出成功!');
-				//下载
-				
-			}else{
-				$.messager.alert('警告','导出失败!'); 
-			}
-		}) */
-		
-		
 	});
 	
 	

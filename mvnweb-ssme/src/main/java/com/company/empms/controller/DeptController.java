@@ -148,7 +148,7 @@ public class DeptController extends BaseAction {
 	}
 
 	@RequestMapping(value = "/download", method = RequestMethod.GET)
-	public void downstudents(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	public Map<String, Object> downstudents(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		// 一、从后台拿数据
 		List<Dept> list = null;
 		list=ds.list();
@@ -209,9 +209,12 @@ public class DeptController extends BaseAction {
 			wb.write(out);
 			out.close();
 			wb.cloneSheet(0);
+			data.put(STATUS, "1");
 		} catch (IOException e) {
+			data.put(STATUS, "2");
 			e.printStackTrace();
 		}
+		return data;
 	}
 
 }
