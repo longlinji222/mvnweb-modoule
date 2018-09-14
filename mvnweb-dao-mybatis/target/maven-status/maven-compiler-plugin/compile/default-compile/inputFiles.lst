@@ -13,12 +13,15 @@ E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\c
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\dao\AddTestMongo.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\dao\SearchTestMongodb.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\entity\Myuser.java
+E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\criteria\FilesCriteria.java
+E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\dao\FilesDAO.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\status\Monitor.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\commn\EasyCriteria.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\commn\PageBean.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\commn\MD5Util.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\dao\jsontolist.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\entity\Emp.java
+E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\entity\Files.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\dao\DeptDAO.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\dao\javaOperator.java
 E:\temp\mvnweb-modoule\gitCode\mvnweb-modoule\mvnweb-dao-mybatis\src\main\java\com\company\mybatis\commn\Week.java
